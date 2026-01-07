@@ -1,0 +1,28 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Environment files (keep .env.example)
+.env
+.env.local
+.env.*.local
+.dev.vars
+
+# Build output
+dist
+
+# Wrangler
+.wrangler
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage

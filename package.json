@@ -1,0 +1,36 @@
+{
+  "name": "jwt-auth-eval",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest",
+    "generate-keys": "npx tsx scripts/generate-keys.ts",
+    "load-test:jwt": "k6 run .artifacts/jwt-auth/scripts/load_test_5x.js",
+    "load-test:jwt:1x": "k6 run -e RATE=33 .artifacts/jwt-auth/scripts/load_test_5x.js",
+    "load-test:d1-verify": "k6 run .artifacts/jwt-auth/scripts/load_test_with_d1_verification.js",
+    "load-test:password": "k6 run .artifacts/jwt-auth/scripts/load_test_password.js",
+    "load-test:password:light": "k6 run -e ITERATIONS=10000 .artifacts/jwt-auth/scripts/load_test_password.js"
+  },
+  "dependencies": {
+    "hono": "^4.6.0",
+    "jose": "^6.1.3"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.11.1",
+    "@cloudflare/workers-types": "^4.20240909.0",
+    "@types/node": "^25.0.3",
+    "@vitest/runner": "^3.2.4",
+    "@vitest/snapshot": "^3.2.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.5.4",
+    "vitest": "^3.2.4",
+    "wrangler": "^4.54.0"
+  }
+}

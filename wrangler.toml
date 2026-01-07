@@ -1,0 +1,19 @@
+name = "jwt-auth-eval"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# .envファイルからの環境変数読み込みを有効化（Wrangler 3.x以降）
+# 開発時は `wrangler dev` が自動的に .env を読み込みます
+# 本番環境では `wrangler secret put` で設定してください
+
+[vars]
+# 公開環境変数はここに設定
+# シークレットは .env ファイルで管理
+
+# D1 Database for request logs
+[[d1_databases]]
+binding = "DB"
+database_name = "jwt-auth-logs"
+database_id = "6e5e2599-e7b5-4dd1-b4bd-eec6df8d7352"
+migrations_dir = "migrations"
