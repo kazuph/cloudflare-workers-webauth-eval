@@ -19,7 +19,7 @@ const errorRate = new Rate('errors');
 const verifyLatency = new Trend('jwt_verify_latency');
 const requestCount = new Counter('total_requests');
 
-const BASE_URL = __ENV.BASE_URL || 'https://jwt-auth-eval.kazu-san.workers.dev';
+const BASE_URL = __ENV.BASE_URL || 'https://jwt-auth-eval.<your-subdomain>.workers.dev';
 
 // 検証用の小規模負荷設定（33 RPS × 30秒 = 約990リクエスト）
 export const options = {

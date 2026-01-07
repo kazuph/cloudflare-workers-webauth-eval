@@ -1,5 +1,5 @@
 ============================================================
-JWT Auth API Test - Target: https://jwt-auth-eval.kazu-san.workers.dev
+JWT Auth API Test - Target: https://jwt-auth-eval.<your-subdomain>.workers.dev
 ============================================================
 
 [HS256] Testing full authentication flow...
@@ -32,4 +32,4 @@ SUMMARY
   ES256: ✅ PASS
 
 Overall: ✅ ALL TESTS PASSED
-Target: https://jwt-auth-eval.kazu-san.workers.dev
+Target: https://jwt-auth-eval.<your-subdomain>.workers.dev

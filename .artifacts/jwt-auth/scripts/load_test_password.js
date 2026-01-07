@@ -18,7 +18,7 @@ const errorRate = new Rate('errors');
 const hashLatency = new Trend('password_hash_latency');
 const requestCount = new Counter('total_requests');
 
-const BASE_URL = __ENV.BASE_URL || 'https://jwt-auth-eval.kazu-san.workers.dev';
+const BASE_URL = __ENV.BASE_URL || 'https://jwt-auth-eval.<your-subdomain>.workers.dev';
 const ITERATIONS = __ENV.ITERATIONS || '100000';
 
 // 負荷設定: 10 RPS × 30秒（パスワードハッシュは計算負荷が高いため控えめ）

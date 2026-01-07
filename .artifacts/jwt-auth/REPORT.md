@@ -2,7 +2,7 @@
 
 **日時**: 2026-01-07
 **プロジェクト**: cloudflare-workers-webauth-eval
-**デプロイ先**: https://jwt-auth-eval.kazu-san.workers.dev
+**デプロイ先**: https://jwt-auth-eval.<your-subdomain>.workers.dev
 
 ## 概要
 
@@ -121,7 +121,7 @@ Hono + Cloudflare Workers を使用したJWT認証APIの実装・検証が完了
 
 ```
 Deployed jwt-auth-eval triggers (1.45 sec)
-  https://jwt-auth-eval.kazu-san.workers.dev
+  https://jwt-auth-eval.<your-subdomain>.workers.dev
 Current Version ID: 9ce32718-bb4c-445d-8265-43088a53ffb6
 ```
 
@@ -154,7 +154,7 @@ user_id, algorithm, token_type, ip, user_agent, error_message
 ## 負荷試験結果
 
 ### 試験概要
-- **対象**: https://jwt-auth-eval.kazu-san.workers.dev
+- **対象**: https://jwt-auth-eval.<your-subdomain>.workers.dev
 - **ツール**: k6 (Grafana Labs)
 - **目的**: JWT署名検証の性能限界確認
 - **負荷設定**: 33 RPS × 1分 × 3アルゴリズム（約2000リクエスト/分）
@@ -217,7 +217,7 @@ user_id, algorithm, token_type, ip, user_agent, error_message
 ## 負荷試験結果（5倍負荷）
 
 ### 試験概要
-- **対象**: https://jwt-auth-eval.kazu-san.workers.dev
+- **対象**: https://jwt-auth-eval.<your-subdomain>.workers.dev
 - **ツール**: k6 (Grafana Labs)
 - **目的**: JWT署名検証の性能限界確認（5倍負荷）
 - **負荷設定**: 165 RPS × 1分 × 3アルゴリズム（約10,000リクエスト/分）

@@ -6,7 +6,7 @@ import { Rate, Trend } from 'k6/metrics';
 const errorRate = new Rate('errors');
 const verifyLatency = new Trend('jwt_verify_latency');
 
-const BASE_URL = __ENV.BASE_URL || 'https://jwt-auth-eval.kazu-san.workers.dev';
+const BASE_URL = __ENV.BASE_URL || 'https://jwt-auth-eval.<your-subdomain>.workers.dev';
 
 // 2000リクエスト/分 = 約33 RPS
 // 1分間のテスト

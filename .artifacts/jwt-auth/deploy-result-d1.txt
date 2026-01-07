@@ -20,5 +20,5 @@ env.DB (jwt-auth-logs)      D1 Database
 
 Uploaded jwt-auth-eval (6.67 sec)
 Deployed jwt-auth-eval triggers (1.62 sec)
-  https://jwt-auth-eval.kazu-san.workers.dev
+  https://jwt-auth-eval.<your-subdomain>.workers.dev
 Current Version ID: 5a2e1131-e591-41d1-a88d-14b6514f943f

@@ -16,5 +16,5 @@ Total Upload: 159.04 KiB / gzip: 34.69 KiB
 Worker Startup Time: 14 ms
 Uploaded jwt-auth-eval (2.38 sec)
 Deployed jwt-auth-eval triggers (1.45 sec)
-  https://jwt-auth-eval.kazu-san.workers.dev
+  https://jwt-auth-eval.<your-subdomain>.workers.dev
 Current Version ID: 9ce32718-bb4c-445d-8265-43088a53ffb6
