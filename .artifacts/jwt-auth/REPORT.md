@@ -153,6 +153,10 @@ user_id, algorithm, token_type, ip, user_agent, error_message
 
 ## 負荷試験結果
 
+### レイテンシ比較グラフ
+
+![レイテンシ比較グラフ](./latency_comparison.png)
+
 ### 試験概要
 - **対象**: https://jwt-auth-eval.<your-subdomain>.workers.dev
 - **ツール**: k6 (Grafana Labs)

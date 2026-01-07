@@ -120,6 +120,10 @@ pnpm load-test:password:light
 
 ## 試験結果
 
+### レイテンシ比較グラフ
+
+![レイテンシ比較グラフ](.artifacts/jwt-auth/latency_comparison.png)
+
 ### JWT署名検証（165 RPS）
 
 | 指標 | 結果 |
