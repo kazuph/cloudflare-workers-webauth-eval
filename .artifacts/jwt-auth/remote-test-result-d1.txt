@@ -1,0 +1,35 @@
+============================================================
+JWT Auth API Test - Target: https://jwt-auth-eval.kazu-san.workers.dev
+============================================================
+
+[HS256] Testing full authentication flow...
+   Login: 200
+   Verify: 200
+   Protected: 200
+   Refresh: 200
+
+[RS256] Testing full authentication flow...
+   Login: 200
+   Verify: 200
+   Protected: 200
+   Refresh: 200
+
+[ES256] Testing full authentication flow...
+   Login: 200
+   Verify: 200
+   Protected: 200
+   Refresh: 200
+
+[JWKS] Testing public keys endpoint...
+   Status: 200
+   Keys: 2
+
+============================================================
+SUMMARY
+============================================================
+  HS256: ✅ PASS
+  RS256: ✅ PASS
+  ES256: ✅ PASS
+
+Overall: ✅ ALL TESTS PASSED
+Target: https://jwt-auth-eval.kazu-san.workers.dev

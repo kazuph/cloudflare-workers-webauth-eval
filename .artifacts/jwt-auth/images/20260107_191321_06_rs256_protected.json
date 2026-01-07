@@ -1,0 +1,12 @@
+{
+  "message": "Access granted to protected resource",
+  "algorithm": "RS256",
+  "user": {
+    "id": "user-1",
+    "email": "test@example.com"
+  },
+  "data": {
+    "secretInfo": "This is protected data only accessible with a valid RS256 JWT",
+    "timestamp": "2026-01-07T10:13:23.182Z"
+  }
+}

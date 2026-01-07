@@ -1,0 +1,24 @@
+✅ 承認: pnpm run deploy (理由: 承認)
+- tmux: [tmux 1-%510] cloudflare-workers-webauth-eval-[510] JWT完了✅
+- tmux pane title: ✳ 負荷想定の仕様
+- 実行ディレクトリ: ~/src/github.com/kazuph/cloudflare-workers-webauth-eval
+- シェル: /bin/zsh
+- 親プロセス: claude
+- TTY: not a tty
+
+> jwt-auth-eval@ deploy /Users/kazuph/src/github.com/kazuph/cloudflare-workers-webauth-eval
+> wrangler deploy
+
+
+ ⛅️ wrangler 4.54.0
+───────────────────
+Total Upload: 163.17 KiB / gzip: 35.86 KiB
+Worker Startup Time: 19 ms
+Your Worker has access to the following bindings:
+Binding                     Resource         
+env.DB (jwt-auth-logs)      D1 Database      
+
+Uploaded jwt-auth-eval (6.67 sec)
+Deployed jwt-auth-eval triggers (1.62 sec)
+  https://jwt-auth-eval.kazu-san.workers.dev
+Current Version ID: 5a2e1131-e591-41d1-a88d-14b6514f943f

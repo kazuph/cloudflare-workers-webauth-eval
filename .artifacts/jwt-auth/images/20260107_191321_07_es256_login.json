@@ -1,0 +1,7 @@
+{
+  "message": "Login successful",
+  "algorithm": "ES256",
+  "accessToken": "eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJ1c2VyLTEiLCJlbWFpb...",
+  "refreshToken": "eyJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJ1c2VyLTEiLCJlbWFpb...",
+  "expiresIn": "15m"
+}

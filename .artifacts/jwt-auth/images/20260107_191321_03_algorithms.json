@@ -1,0 +1,37 @@
+{
+  "supported": [
+    {
+      "algorithm": "HS256",
+      "type": "symmetric",
+      "description": "HMAC with SHA-256",
+      "endpoints": {
+        "login": "POST /auth/hs256/login",
+        "refresh": "POST /auth/hs256/refresh",
+        "verify": "GET /auth/hs256/verify",
+        "protected": "GET /auth/hs256/protected"
+      }
+    },
+    {
+      "algorithm": "RS256",
+      "type": "asymmetric",
+      "description": "RSA with SHA-256",
+      "endpoints": {
+        "login": "POST /auth/rs256/login",
+        "refresh": "POST /auth/rs256/refresh",
+        "verify": "GET /auth/rs256/verify",
+        "protected": "GET /auth/rs256/protected"
+      }
+    },
+    {
+      "algorithm": "ES256",
+      "type": "asymmetric",
+      "description": "ECDSA with P-256 and SHA-256",
+      "endpoints": {
+        "login": "POST /auth/es256/login",
+        "refresh": "POST /auth/es256/refresh",
+        "verify": "GET /auth/es256/verify",
+        "protected": "GET /auth/es256/protected"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "JWT Auth Evaluation API",
+  "version": "1.0.0",
+  "description": "JWT authentication API supporting HS256, RS256, and ES256 algorithms",
+  "endpoints": {
+    "auth": {
+      "hs256": "/auth/hs256/*",
+      "rs256": "/auth/rs256/*",
+      "es256": "/auth/es256/*"
+    },
+    "meta": {
+      "health": "/health",
+      "algorithms": "/algorithms",
+      "jwks": "/.well-known/jwks.json"
+    }
+  }
+}
